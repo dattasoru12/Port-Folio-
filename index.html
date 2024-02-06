@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7d3635e507.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        
+        <div class="container">
+            <nav>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Aspiring Software Developer</p>
+                <h1>Hii,I am <span>Souramita Datta</span><br>from NITA</h1>
+            </div>
+        </div>
+    </div>
+    <!------------------------------about----------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="myphoto.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Souramita Datta, a hard-working under graduate student pursuing Electronics and communication Engineering from NIT Agartala. Always excited and keen to learn something new technologies. Interested in problem solving using ds/ algo , Web development, Machine-learning,Data analysis .</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Building Web apps</li>
+                            <li><span>Data Analysis</span><br>Analysis of Raw Data </li>
+                            <li><span>Machine-learning</span><br>Building Machine-learning models</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development</span><br>Made sorting visualizer & Portfolio website using HTML,CSS,JavaScript.</li>
+                            <li><span>Data Analysis</span><br>Made Whatsapp-Chat-Analyzer Project using Python(Pandas,Numpy,seaborn,Matplot.lib),jupiter-notebook,streamlit.</li>
+                            <li><span>Machine-learning</span><br>Build a Book Recommender System using Python(Pandas,Numpy,seaborn,Matplot.lib),jupiter-notebook,flask (Using  Clusterning algorithm). </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2018-2019</span><br>Matriculation Education</li>
+                            <li><span>2019-2021</span><br>Higher-Secondary Education</li>
+                            <li><span>2021-2025</span><br>Bechelors Of Technology(NITA)</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!--Services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Front-end Developer.Done multiple Front-end projects.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Data-analysis</h2>
+                <p>Done multiple data-analysis project on jupiter-notebook.</p>
+                <a href="#">Learn more</a>
+
+            </div>
+
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Machine-learning</h2>
+                <p>Made multiple Machine-learning models and deployed them.</p>
+                <a href="#">Learn more</a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+<!---portfolio-->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                 <img src="wca.png" alt="">
+                 <div class="layer">
+                    <h3>Whatsapp Chat Analyzer</h3>
+                    <a href= https://whatsapp-chat-analyzer-dwkm.onrender.com/><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                    <p>
+                        
+                        Its a WhatsApp Chat Analyzer project, leveraging Python and Flask, offers insightful statistical analysis, sentiment tracking, word cloud generation, and media categorization to provide a comprehensive overview of communication patterns and themes within WhatsApp conversations between groups or two individuals .
+
+
+                    </p>
+                 </div>
+            </div>
+
+
+
+
+
+
+            <div class="work">
+                <img src="HrDash.webp" alt="">
+                <div class="layer">
+                   <h3>HR Analytics Dashboard</h3>
+                   <a href= https://github.com/dattasoru12/HR-Analytics-Dashboard/><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+                   <p>
+                       
+                    Designed and implemented HR analytics dashboard using Power BI, providing actionable insights on key HR metrics such as employee turnover, recruitment efficiency, and performance evaluation. Utilized data visualization techniques to present findings clearly and facilitate informed decision-making for HR strategy and workforce planning.
+
+                   </p>
+                </div>
+           </div>
+
+
+
+
+
+
+
+
+
+           
+           <div class="work">
+            <img src="brs.png" alt="">
+           <div class="layer">
+                    <h3>Book Recommender system</h3>
+                    <a href= https://github.com/dattasoru12/Book-Recommender-System/><i class="fa-sharp fa-solid fa-up-right-from-square"></i></a>
+
+                    <p>Its a Machine-learning project (Web-app) which recommends books on behalf of users choice  based on the famous algorithm Clusterning.</p>
+                 </div>
+       </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+
+    </div>
+</div>
+<!---Contact--->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><a href="souramitadatta@gmail.com"><i class="fas fa-paper-plane"></i></a>
+                    Email</p>
+                <p><i class="fas fa-phone-square-alt"></i>
+                     6909789557</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/souramita-datta-25898b227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/dattasoru12"><i class="fa-brands fa-github"></i></a>
+                <a href="htt2624"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                    <a href="lastResumeSouramitaDatta.pdf" download="" class="btn btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form  name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @ Souramita Datta.Made with LOVE ❤️🐱<i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+var tablinks=document.getElementsByClassName("tab-links")
+var tabcontents=document.getElementsByClassName("tab-contents")
+
+function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+
+}
+
+
+
+ 
+    
+</script>
+
+<script>
+
+var sidemenu=document.getElementById("sidemenu");
+
+function openmenu(){
+    sidemenu.style.right="0";
+
+}
+function closemenu(){
+    sidemenu.style.right="-200px ";
+
+}
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw2TZDD2b7sJ1o-kEuLGsYpSEBQ5EWWGfJdm2h7yyNHcvrz95Dxg34H7XGwpG-JMp0y/exec     '
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
